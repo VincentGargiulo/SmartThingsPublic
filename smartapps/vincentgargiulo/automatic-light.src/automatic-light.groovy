@@ -63,7 +63,8 @@ def updated() {
 
 def initialize()
 {
-	subscribe(motionSensor, "motionSensor", motionDetection)
+	log.debug "location.id: ${location.id}"
+	subscribe(motionSensor, "motion", motionDetection)
 }
 
 def motionDetection(evt)
@@ -84,7 +85,7 @@ def motionDetection(evt)
     	log.debug "Motion Sensor reported active"
         if (active & dayCheck)
         {
-            light.on
+            light.on()
         }
 	}
     //Motion Stopped
@@ -115,7 +116,7 @@ def checkIfInactive()
         if (elapsedTime > timeToWaitMS)
         {
         	log.debug "Turning off light"
-			light.off;
+			light.off()
         }
         else
         {	
