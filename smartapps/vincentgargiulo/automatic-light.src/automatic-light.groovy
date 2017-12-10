@@ -19,9 +19,9 @@ definition(
     author: "Vincent Gargiulo",
     description: "This app turns on a light when motion is detected during a user specified time period. The user can select which days this app is enabled. The user can also set a timeout period for the light. This will cause the light to turn off if the motion sensor has not detected movement in that amount of time.",
     category: "Convenience",
-    iconUrl: "https://imgur.com/a/8YFvz",
-    iconX2Url: "https://imgur.com/a/8YFvz",
-    iconX3Url: "https://imgur.com/a/8YFvz")
+    iconUrl: "https://i.imgur.com/ygPB6wB.png",
+    iconX2Url: "https://i.imgur.com/ygPB6wB.png",
+    iconX3Url: "https://i.imgur.com/ygPB6wB.png")
 
 
 preferences 
