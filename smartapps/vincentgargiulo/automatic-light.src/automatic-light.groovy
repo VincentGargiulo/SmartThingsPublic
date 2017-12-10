@@ -36,14 +36,14 @@ preferences
    	}
     section("Time to wait before turning off the light if no motion is detected") 
     {
-    	input "minutesToWait", "number", required: true, title: "Minutes?"
+    	input "minutesToWait", "number", required: true, title: "How many Minutes?"
 	}
-	section("What time period should this be active?") 
+	section("What time period should this app be active?") 
     {
       	input "fromTime", "time", title: "From", required: true
         input "toTime", "time", title: "To", required: true
     }
-    section("On which days should this App run?")
+    section("On which days should this app be active?")
     {
         input "userDayEnable", "enum", title: "Select the Days of the Week", required: true, multiple: true, options: ["Monday": "Monday", "Tuesday": "Tuesday", "Wednesday": "Wednesday", "Thursday": "Thursday", "Friday": "Friday", "Saturday":"Saturday", "Sunday":"Sunday"]
     }
